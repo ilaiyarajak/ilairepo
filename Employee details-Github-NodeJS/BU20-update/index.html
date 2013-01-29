@@ -1,0 +1,71 @@
+<head>	
+<title>Employee details</title>
+<script type = "text/javascript">
+var count = 2;
+function validate() {
+	var un = document.myform.username.value;
+	var pw = 	document.myform.pword.value;
+	var valid = false;
+
+	var unArray = ["abc", "raja"];  // as many as you like - no //comma after final entry
+	var pwArray = ["123", "rani"];  // the 		//corresponding passwords;
+
+	for (var i=0; i <unArray.length; i++) {
+		if ((un == unArray[i]) && (pw == pwArray[i])) {
+		valid = true;
+		break;
+		}
+	}		
+
+	if (valid) {
+	alert ("Login was successful");
+	window.location = "main.html";
+	return false;
+	}
+
+	var t = " tries";
+	if (count == 1) {t = " try"}
+
+	if (count >= 1) {
+		alert ("Invalid username and/or password.  You have " + count + t + " left.");
+		document.myform.username.value = "";
+		document.myform.pword.value = "";
+		setTimeout("document.myform.username.focus()", 25);
+		setTimeout("document.myform.username.select()", 25);
+		count --;
+	}
+
+	else {
+		alert ("Still incorrect! You have no more tries left!");
+		document.myform.username.value = "No more tries allowed!";
+		document.myform.pword.value = "";
+		document.myform.username.disabled = true;
+		document.myform.pword.disabled = true;
+		return false;
+	}
+
+}
+
+</script>
+<style type="text/css">
+		html,body{height: 100%; padding:0; margin:0;}
+		form{ width:30em;height:10em; margin:-5em auto 0 auto; position: relative; top:40%; border:1px dotted #ccc; padding:.25em; }
+		fieldset{ margin:0;   border:0;padding:0;}
+		legend{float:left; font-size: 200%; text-align: center; color:blue; font-weight: bold; border-bottom: 1px solid blue; width:15em;  padding:0; }
+		label, label+ input {display:inline; float:left;margin-top:1em;}
+		label{text-align: right; width:28%; clear: left; margin-top:.8em; }
+		label+ input{ width:60%; padding:.25em; ; margin-left:.5em; border: 1px inset;  margin-left: }
+		#sub{  margin-top:1em; position: relative; float:left;clear: left; margin-left: 29%}
+</style>
+</head>
+<body>
+	<form name="myform" method="post">
+		<fieldset><legend>Employee Details</legend>
+			<label for="name">Username: </label><input  type="text" name="username" id="name">
+			<label for="password">Password: </label><input  type="password" name="pword" id="password" >
+			<input type="button" value="Login" name="Submit" onclick= "validate()" id="sub">
+			<!--<input type="submit" value="Login" id="sub">-->
+		</fieldset>	
+	</form>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0">
+
+<style>
+body, #main ul, #main li, h2 {
+margin:0; padding:0;
+}
+body {
+background:#afafa6;
+}
+#container {
+	font-family:Arial;
+	
+	margin:0 auto;
+}
+header, footer {
+color:orange;
+height:50px;
+background:black;
+margin-bottom:0.5em;
+line-height:40px;
+-moz-border-radius: 15px;
+-webkit-border-radius: 15px;
+border-radius: 0px;
+
+}
+#login input{
+height:40px;
+width:200px;
+background:#cfcfcf;
+margin-bottom:0.5em;
+line-height:40px;
+border-radius: 50px;
+}
+
+
+#main li a {
+color:black;
+text-decoration:none;
+margin-left:1em;
+}
+</style>
+</head>
+<body>
+<div id="container">
+<header>
+<h2 align="center">SMART ORDER SYSTEM</h2>
+</header>
+<form action="/Loginvalidation" id="login" align="center" method="post">
+<label for="uname">Username:</label ><input name="username" type="text"/></br>
+<label for="pword">Password:</label><input name="password" type="password"/></br>
+<input type="submit" value="LOGIN"/>
+</form>
+<footer align="center">
+Copyright@ilaiya
+</footer>
+</div>
+</body>
+</html>

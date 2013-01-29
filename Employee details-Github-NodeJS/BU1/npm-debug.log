@@ -1,0 +1,57 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'https://github.com/mariano/node-db-mysql.git' ]
+2 info using npm@1.1.66
+3 info using node@v0.8.15
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose read json C:\Users\Kutty\Documents\GitHub\package.json
+6 verbose read json C:\Users\Kutty\Documents\GitHub\node_modules\CHANGELOG\package.json
+7 verbose read json C:\Users\Kutty\Documents\GitHub\node_modules\db-mysql.js\package.json
+8 verbose read json C:\Users\Kutty\Documents\GitHub\node_modules\lib\package.json
+9 verbose read json C:\Users\Kutty\Documents\GitHub\node_modules\package.json\package.json
+10 verbose read json C:\Users\Kutty\Documents\GitHub\node_modules\README.md\package.json
+11 verbose read json C:\Users\Kutty\Documents\GitHub\node_modules\src\package.json
+12 verbose read json C:\Users\Kutty\Documents\GitHub\node_modules\tests-settings.json\package.json
+13 verbose read json C:\Users\Kutty\Documents\GitHub\node_modules\tests.js\package.json
+14 verbose read json C:\Users\Kutty\Documents\GitHub\node_modules\wscript\package.json
+15 verbose read json C:\Users\Kutty\Documents\GitHub\package.json
+16 verbose cache add [ 'https://github.com/mariano/node-db-mysql.git', null ]
+17 silly cache add name=undefined spec="https://github.com/mariano/node-db-mysql.git" args=["https://github.com/mariano/node-db-mysql.git",null]
+18 verbose parsed url { protocol: 'https:',
+18 verbose parsed url   slashes: true,
+18 verbose parsed url   host: 'github.com',
+18 verbose parsed url   hostname: 'github.com',
+18 verbose parsed url   href: 'https://github.com/mariano/node-db-mysql.git',
+18 verbose parsed url   pathname: '/mariano/node-db-mysql.git',
+18 verbose parsed url   path: '/mariano/node-db-mysql.git' }
+19 silly lockFile d907030e-ub-com-mariano-node-db-mysql-git https://github.com/mariano/node-db-mysql.git
+20 verbose lock https://github.com/mariano/node-db-mysql.git C:\Users\Kutty\AppData\Roaming\npm-cache\d907030e-ub-com-mariano-node-db-mysql-git.lock
+21 verbose addRemoteTarball [ 'https://github.com/mariano/node-db-mysql.git', null ]
+22 info retry fetch attempt 1 at 23:21:53
+23 verbose fetch to= C:\Users\Kutty\AppData\Local\Temp\npm-9160\1355593913946-0.20314582553692162\tmp.tgz
+24 http GET https://github.com/mariano/node-db-mysql.git
+25 http 200 https://github.com/mariano/node-db-mysql.git
+26 verbose tar unpack C:\Users\Kutty\AppData\Local\Temp\npm-9160\1355593913946-0.20314582553692162\tmp.tgz
+27 silly lockFile a06d94af-3946-0-20314582553692162-package C:\Users\Kutty\AppData\Local\Temp\npm-9160\1355593913946-0.20314582553692162\package
+28 verbose lock C:\Users\Kutty\AppData\Local\Temp\npm-9160\1355593913946-0.20314582553692162\package C:\Users\Kutty\AppData\Roaming\npm-cache\a06d94af-3946-0-20314582553692162-package.lock
+29 silly gunzTarPerm modes [ '755', '644' ]
+30 verbose read json C:\Users\Kutty\AppData\Local\Temp\npm-9160\1355593913946-0.20314582553692162\package\package.json
+31 error not a package C:\Users\Kutty\AppData\Local\Temp\npm-9160\1355593913946-0.20314582553692162\tmp.tgz
+32 silly lockFile a06d94af-3946-0-20314582553692162-package C:\Users\Kutty\AppData\Local\Temp\npm-9160\1355593913946-0.20314582553692162\package
+33 silly lockFile d907030e-ub-com-mariano-node-db-mysql-git https://github.com/mariano/node-db-mysql.git
+34 error Error: ENOENT, open 'C:\Users\Kutty\AppData\Local\Temp\npm-9160\1355593913946-0.20314582553692162\package\package.json'
+35 error If you need help, you may report this log at:
+35 error     <http://github.com/isaacs/npm/issues>
+35 error or email it to:
+35 error     <npm-@googlegroups.com>
+36 error System Windows_NT 6.1.7601
+37 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "https://github.com/mariano/node-db-mysql.git"
+38 error cwd C:\Users\Kutty\Documents\GitHub\ilairepo
+39 error node -v v0.8.15
+40 error npm -v 1.1.66
+41 error path C:\Users\Kutty\AppData\Local\Temp\npm-9160\1355593913946-0.20314582553692162\package\package.json
+42 error code ENOENT
+43 error errno 34
+44 verbose exit [ 34, true ]

@@ -1,0 +1,84 @@
+<html>
+
+<head>
+
+    <title>Employee Details</title>
+
+    <link rel="Stylesheet"  href="add.css"/>
+
+<!--     <script type="text/javascript" src="empdetails.js"></script>   -->
+
+<body>
+
+              <form id="myform" action="/insert" method="post">
+
+	<fieldset ><h1 align="center">EMPLOYEE DETAILS</h1>
+
+                           <ol>
+
+                                  <li>
+
+                                         <label for="empid">E-ID</label>
+
+                                         <input name="id" type="text" placeholder="123" required autofocus>
+
+										<!-- <input type="hidden" id="id"/> -->
+
+                                  </li>
+
+                                  <li>
+
+                                         <label for="empname">Name</label>
+
+                                         <input name="name" type="text" placeholder="First and last name" required>
+
+                                  </li>
+                                  <li>
+
+                                         <label for="empsdesign">Designation</label>
+
+                                         <input name="design" type="text" placeholder="Designation" required>
+
+                                  </li>
+                                  <li>
+
+                                         <label for="empaddr1">Address1</label>
+
+                                         <input name="address1" type="text" placeholder="Address1" required>
+
+                                  </li>
+                                  <li>
+
+                                         <label for="empaddr2">Address2</label>
+
+                                         <input name="address2" type="text" placeholder="Address2" required>
+
+                                  </li>
+								  <li>
+
+                                         <label for="empact">Active</label>
+
+                                         <input name="active" type="text" placeholder="State" required>
+
+                                  </li>
+
+
+                           </ol>
+
+                     </fieldset>
+	<!-- <button id="submitButton" type="submit">INSERT</button>-->
+                <!-- <button id="btnReset" type=submit>RESET</button>-->
+
+                 <button id="submitButton" type="submit">INSERT</button>
+	
+
+               <!--  <button id="btnUpdate" type=submit>UPDATE</button>-->
+
+
+              </form><br />
+
+        <div id="results"></div>
+
+</body>
+
+</html>

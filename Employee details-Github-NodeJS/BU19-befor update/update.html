@@ -1,0 +1,115 @@
+<html>
+
+<head>
+
+    <title>Employee Details-Update</title>
+
+    <link rel="Stylesheet"  href="add.css"/>
+
+<!--     <script type="text/javascript" src="empdetails.js"></script>   -->
+	<script type="text/javascript">
+
+		function insertdata(){
+			var sno = getUrlVars()["sno"];
+			var id = getUrlVars()["id"];
+			//alert(id);
+			var name = getUrlVars()["name"];
+			var design = getUrlVars()["design"];
+			var addr1 = getUrlVars()["addr1"];
+			var addr2 = getUrlVars()["addr2"];
+			var act = getUrlVars()["act"];
+			document.getElementById('eid').value=id;
+			document.getElementById('ename').value=name;
+			document.getElementById('edesign').value=design;
+			document.getElementById('eaddr1').value=addr1;
+			document.getElementById('eaddr2').value=addr2;
+			document.getElementById('eact').value=act;
+			document.getElementById('sno').value=sno;
+			alert(sno);
+			//alert(second);
+			
+		}
+		function getUrlVars() {
+			var vars = {};
+			var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+			vars[key] = value;
+			});
+			return vars;
+		}
+
+
+		//window.onload=my_code();
+	</script>
+</head>
+<body onload="insertdata();">
+
+              <form id="myform" action="/updaterow" method="post">
+
+	<fieldset ><h3 align="center">EMPLOYEE DETAILS-UPDATE</h3>
+
+                           <ol>
+
+                                  <li>
+                                         <label for="empid">E-ID</label>
+
+                                         <input id="eid" name="id" type="text" placeholder="123" required autofocus>
+
+
+                                  </li>
+
+                                  <li>
+
+                                         <label for="empname">Name</label>
+
+                                         <input id="ename" name="name" type="text" placeholder="First and last name" required>
+
+                                  </li>
+                                  <li>
+
+                                         <label for="empsdesign">Designation</label>
+
+                                         <input id="edesign" name="design" type="text" placeholder="Designation" required>
+
+                                  </li>
+                                  <li>
+
+                                         <label for="empaddr1">Address1</label>
+
+                                         <input id="eaddr1" name="address1" type="text" placeholder="Address1" required>
+
+                                  </li>
+                                  <li>
+
+                                         <label for="empaddr2">Address2</label>
+
+                                         <input id="eaddr2" name="address2" type="text" placeholder="Address2" required>
+
+                                  </li>
+								  <li>
+
+                                         <label for="empact">Active</label>
+
+                                         <input id="eact" name="active" type="text" placeholder="State" required>
+
+                                  </li>
+
+
+                           </ol>
+
+                     </fieldset>
+	<!-- <button id="submitButton" type="submit">INSERT</button>-->
+                <!-- <button id="btnReset" type=submit>RESET</button>-->
+
+                 <button id="submitButton" type="submit">UPDATE</button>
+				 <input type="hidden" id="sno"/>
+
+               <!--  <button id="btnUpdate" type=submit>UPDATE</button>-->
+
+
+              </form><br />
+
+        <div id="results"></div>
+
+</body>
+
+</html>
