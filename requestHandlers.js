@@ -47,10 +47,10 @@ function Loginvalidation(pathname,response,postData)
 {
 	console.log("Request handler 'loginvalidation' was called.");
 	connection.query('use ilaiya');
-    var input=querystring.parse(postData);
+	var input=querystring.parse(postData);
 	//var length;
 
-	connection.query('SELECT * from users where username=? and password=?',[input["username"],input["password"]],function(err, rows, fields) {
+	connection.query('SELECT * from users where username=? and password=?',[input["uname"],input["pword"]],function(err, rows, fields) {
 	//response.write(''+rows.length);
 	var head = '<html>'+
 			'<head>'+
@@ -66,7 +66,7 @@ function Loginvalidation(pathname,response,postData)
 		
 		
 		var body = '<h2>LOGIN WAS SUCCESSFUL</h2>'+
-			'<a href="/index.html">Clic Here to enter</a>';
+			'<a href="sos-home1.html">Clic Here to enter</a>';
 		
 		//response.writeHead(200, {"Content-Type": "text/html"});
 		
